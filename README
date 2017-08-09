@@ -1,0 +1,12 @@
+Sample JAVA app that exports basic and custom metrics for Prometheus to
+collect. The metrics are exported at http://localhost:8081/prometheus-metrics
+
+There is also a Grafana dashboard that can be used to monitor the exported
+metrics. 
+
+The dashboard requires a running instance of Prometheus on the local host
+and the datasource to be available at http://localhost:9090 (which is the
+system default for Prometheus) and named "test_data_source"
+
+The Prometheus server should be started at the project's root folder (or the
+included config file specified with the --config.file parameter at startup)
